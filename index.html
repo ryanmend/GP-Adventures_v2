@@ -206,6 +206,26 @@
             font-style: italic;
         }
 
+        .card-image-team {
+            width: 100%; /* Important! */
+            padding-bottom: 41.25%; /* 412 / 1012 = ~41.25% */
+            height: auto; /* Let height be calculated based on padding-bottom */
+            border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-style: italic;
+}
+
+.card-image-team > * { /* This targets the image inside card-image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Important for images to fill correctly */
+}
+
+
         /* Race Calendar Styles */
         .calendar-filters {
             background: rgba(255, 255, 255, 0.1);
@@ -716,12 +736,13 @@
                         </div>
 
                         <div class="card">
-                            <div class="card-image">
-                                <img src="https://f1destinations.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Lee-from-McLaren-F1-travel-3.jpg?bwg=1714484960" alt="Team Photo">
-                            </div>
-                            <h3>Expert Team</h3>
-                            <p>Our team consists of passionate F1 enthusiasts with decades of combined experience in luxury travel and motorsport. We understand the intricacies of each circuit, the best viewing spots, and how to create memories that last a lifetime.</p>
-                        </div>
+                          <div class="card-image-team">
+                        <img src="https://f1destinations.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Lee-from-McLaren-F1-travel-3.jpg?bwg=1714484960" alt="Team Photo">
+                      </div>
+                      <h3>Expert Team</h3>
+                          <p>Our team consists of passionate F1 enthusiasts with decades of combined experience in luxury travel and motorsport. We understand the intricacies of each circuit, the best viewing spots, and how to create memories that last a lifetime.</p>
+                     </div>
+
 
                     </div>
 
